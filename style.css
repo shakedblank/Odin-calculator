@@ -1,0 +1,47 @@
+:root{
+    --mainWidth: 250px;
+    --fourWidth: calc((var(--mainWidth)/5));
+    --mainColor:  rgba(190, 190, 206, 0.918)
+}
+#Calculator{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 2px solid var(--mainColor);
+    background-color:var(--mainColor);
+    margin: 40px 0 0 40px;
+}
+#numSection{
+    display: flex;
+    width: var(--mainWidth);
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 10px;
+}
+.numButton{
+    width: var(--fourWidth);
+    height: var(--fourWidth);
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 226, 237);
+}
+.numButton:hover{
+    background-color: rgb(245, 171, 200);
+    
+}
+.numButton:active{
+    background-color: rgb(167, 92, 122);
+    
+}
+
+#display{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+#displayText{
+    margin-left: 10px; 
+}
